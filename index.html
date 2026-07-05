@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory</title>
+    <meta name="description" content="Discover local businesses in our Chamber of Commerce.">
+    <meta name="author" content="ADAGLA komlanvi Eric">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+</head>
+<body>
+    <header >
+        <div class="logo-box">
+            <img src="images/logo.svg" alt="Site Logo" width="60" height="60">
+            <span>Eric komlanvi ADAGLA</span>
+        </div>
+        <button id="menu" aria-label="Open Navigation"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="final/index.html">Final</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Home</h1>
+
+        <div class="grid-layout">
+
+            <section class="card">
+                <h2>About Me</h2>
+                <p>
+                    My name is ADAGLA Komlanvi Eric,  I am togolese and live in togo.
+                    I participate the BYU online degree , my major is bachelor in web and logiciel developement.
+                </p>
+            </section>
+            <section class="card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Student Photo">
+            </section>
+
+            <section class="card courses-section">
+                <h2>Web and Computer Programming Certificate</h2>
+
+                <div class="buttons">
+                    <button id="all">All Courses</button>
+                    <button id="wdd">WDD Courses</button>
+                    <button id="cse">CSE Courses</button>
+                </div>
+                <div id="course-container"></div>
+
+                <p id="total-credits"></p>
+            </section>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/ericselace/wdd231" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/komlanvi-eric-adagla-04a4b8209/" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com/profile.php?id=100013780266885" target="_blank">facebook</a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span> ADAGLA komkanvi eric | Togo
+        </p>
+
+        <p id="lastModified"></p>
+
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #1e3a5f;
+    color: white;
+    padding: 1rem;
+}
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-box span {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    }
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+.navigation a:hover,
+.navigation .active {
+    background: #2f5d8c;
+}
+
+main {
+    padding: 1rem;
+}
+h1 {
+    margin-bottom: 1rem;
+}
+
+.grid-layout {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.buttons button {
+    padding: 0.7rem 1rem;
+    border: none;
+    background: #1e3a5f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#course-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    border-radius: 8px;
+    background: #ddd;
+}
+
+.completed {
+    background: #2e8b57;
+    color: white;
+}
+footer {
+    background: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
