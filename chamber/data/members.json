@@ -1,0 +1,50 @@
+[
+{
+"name": "Ak & Fils Construction",
+"address": "123 Rue de la République, Lomé",
+"phone": "+228 98 57 49 32",
+"website": "https://akfils-building.com",
+"image": "akfils.webp",
+"membership": 3
+},
+{
+"name": "Selace New World Tech",
+"address": "45 Avenue des Technologies, Lomé",
+"phone": "+228 92 58 97 33",
+"website": "https://myinformaticbusiness.com",
+"image": "selace.webp",
+"membership": 2
+},
+{
+"name": "Ivrivri Food Services",
+"address": "Boulevard du 30 Août, Lomé",
+"phone": "+228 80 05 55 55",
+"website": "https://ivribusiness.com",
+"image": "ivri.webp",
+"membership": 1
+},
+{
+"name": "Super Market The Good Choice",
+"address": "Boulevard des Armées, Lomé",
+"phone": "+228 79 05 58 55",
+"website": "https://goodchoice.com",
+"image": "choice.webp",
+"membership": 3
+},
+{
+"name": "Lomé Digital Agency",
+"address": "Zone Portuaire, Lomé",
+"phone": "+228 91 22 33 44",
+"website": "https://lomedigital.tg",
+"image": "digital.webp",
+"membership": 2
+},
+{
+"name": "Green Energy Togo",
+"address": "Quartier Administratif, Lomé",
+"phone": "+228 90 11 22 33",
+"website": "https://greenenergy.tg",
+"image": "green.webp",
+"membership": 3
+}
+]

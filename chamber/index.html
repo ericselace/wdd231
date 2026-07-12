@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Lome Chamber of Commerce | Home</title>
+
+    
+    <meta name="description" content="Official Chamber of Commerce directory website showcasing local businesses, events, and community opportunities.">
+
+    
+    <meta name="author" content="Komlanvi Eric Adagla">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore local businesses, community events, and opportunities through our Chamber of Commerce directory website.">
+    <meta property="og:image" content="https://yourwebsite.com/images/chamber-social-preview.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/chamber/directory.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <div class=" logo">
+            <img src="images/logo.svg" alt="chamber of commerce">
+            <span>chamber of commerce</span>
+        </div>
+        <button id="menu">☰</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="darkMode">🌙</button>
+        
+    </header>
+    <section class="hero">
+            <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+            <img src="images/hero-small.webp" alt="Timbuktu City">
+        </picture>
+        <a href="join.html" class="cta-btn">Join the Chamber</a>
+        </section>
+    <main>
+        
+        <div class="container">
+
+
+            <h1>Lome Chamber of Commerce</h1>
+
+            <section class="home-grid">
+
+        
+                <section class="card">
+                    <h2>Current Events</h2>
+
+                    <div class="content">
+                        <p>Business Networking Event - Friday 7 PM</p>
+                        <p>Entrepreneur Workshop - Saturday 10 AM</p>
+                        <p>Chamber Annual Meeting - Next Week</p>
+                    </div>
+                </section>
+
+                <!-- Current Weather -->
+                <section class="card">
+                    <h2>Current Weather</h2>
+
+                    <div class="weather">
+
+                        <img
+                            id="weather-icon"
+                            src=""
+                             alt="Weather icon">
+
+                        <div>
+                            <p><strong id="temp"></strong></p>
+
+                            <p id="description"></p>
+
+                            <p>
+                                High:
+                                <span id="high"></span>
+                            </p>
+
+                            <p>
+                                Low:
+                                <span id="low"></span>
+                            </p>
+
+                            <p>
+                                Humidity:
+                                <span id="humidity"></span>
+                            </p>
+
+                            <p>
+                                Wind:
+                                <span id="wind"></span>
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Forecast -->
+                <section class="card">
+                    <h2>3-Day Forecast</h2>
+
+                   <div id="forecast" class="content"></div>
+                </section>
+
+            </section>
+
+            <!-- Spotlights -->
+            <section class="spotlights">
+
+                <div id="spotlight-container"></div>
+
+            </section>
+
+        </div>
+    
+
+
+    </main>
+    <footer>
+        <div class="footer-left">
+            <h3> Chamber of Commerce</h3>
+
+            <p>10 Rue De La Paix</p>
+            <p>Lome, Togo 999</p>
+            <p>info@Lomec.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+
+        <div class="socials">
+            <a href="#">
+                <img src="images/youtube.webp" alt="YouTube">
+            </a>
+
+            <a href="#">
+                <img src="images/twitter.webp" alt="Twitter">
+            </a>
+
+            <a href="#">
+                <img src="images/linkedin.webp" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="footer-right">
+            <p>WDD231 Class Project</p>
+            <p>Eric komlanvi ADAGLA</p>
+
+            <p>
+                &copy; <span id="year"></span>
+                Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/darkmode.js"></script>
+
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlights.js"></script>
+    
+</body>
+</html> 
