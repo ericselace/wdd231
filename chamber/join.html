@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join | Chamber of Commerce</title>
+    <meta name="description" content="Official Chamber of Commerce Join Page, here we found the tanknful message ">
+    <meta name="author" content="Komlanvi Eric Adagla">
+    <title>Chamber join Page- Lomé</title>
+
+       
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:description" content="This page provides a list of local businesses and organizations that belong to the chamber of commerce.">
+    <meta property="og:image" content="images/chamber-social-preview.jpg">
+    <meta property="og:url" content="https://ericselace.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/join.css">
 
-    <script defer>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.getElementById("timestamp").value = Date.now();
-        });
-    </script>
+    
 </head>
 
 <body>
@@ -157,19 +165,7 @@
 <div id="silver" class="modal"><div class="modal-content"><h2>Silver Benefits</h2><p>Event promotion, training access.</p></div></div>
 <div id="gold" class="modal"><div class="modal-content"><h2>Gold Benefits</h2><p>Top ads, spotlight, VIP events.</p></div></div>
 
-<script>
-function openModal(id) {
-    document.getElementById(id).style.display = "block";
-}
-
-window.onclick = function(event) {
-    document.querySelectorAll(".modal").forEach(m => {
-        if (event.target === m) {
-            m.style.display = "none";
-        }
-    });
-}
-</script>
+<script src="scripts/join.js" defer></script>
 
 </main>
 

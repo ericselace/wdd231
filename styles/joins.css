@@ -1,0 +1,161 @@
+/* ==========================
+   JOIN PAGE LAYOUT
+========================== */
+
+.join-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: start;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: .75rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+input[type="submit"]:hover {
+    background: #0055aa;
+}
+
+/* ==========================
+   MEMBERSHIP CARDS
+========================== */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background: #dddddd;
+    border: 1px solid #999;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn .8s forwards;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card button,
+.card a {
+    display: inline-block;
+    padding: .5rem 1rem;
+    background: white;
+    color: black;
+    border: 1px solid #666;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card button:hover,
+.card a:hover {
+    background: #003366;
+    color: white;
+}
+
+/* Animation */
+
+.card:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: .6s;
+}
+
+.card:nth-child(4) {
+    animation-delay: .8s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================
+   MODALS
+========================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+}
+
+.modal-content {
+    width: min(90%, 400px);
+    margin: 10% auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (min-width: 768px) {
+
+    .join-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .join-container {
+        grid-template-columns: 1.4fr 1fr;
+    }
+
+}
