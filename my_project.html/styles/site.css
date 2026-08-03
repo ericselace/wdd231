@@ -1,0 +1,396 @@
+/*==================================================
+  Green Safe - Website Planning Document
+  WDD 231
+===================================================*/
+
+/* Google Fonts
+--------------------------------------------------*/
+:root{
+    --primary:#2E7D32;
+    --secondary:#A5D6A7;
+    --accent:#4FC3F7;
+    --dark:#333333;
+    --light:#F8F9FA;
+    --white:#FFFFFF;
+
+    --heading-font:"Poppins", sans-serif;
+    --body-font:"Open Sans", sans-serif;
+
+    --shadow:0 4px 12px rgba(0,0,0,.08);
+    --radius:12px;
+}
+
+/*==================================================
+  RESET
+===================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+body{
+    font-family:var(--body-font);
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.7;
+}
+
+/*==================================================
+HEADER
+===================================================*/
+
+header{
+    background:var(--primary);
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+
+    padding:2rem;
+}
+
+.logo{
+    font-size:3rem;
+}
+
+header h1{
+    font-family:var(--heading-font);
+    font-size:2.3rem;
+}
+
+.subtitle{
+    margin-top:.3rem;
+}
+
+/*==================================================
+MAIN
+===================================================*/
+
+main{
+    width:min(1100px,90%);
+    margin:2rem auto;
+
+    display:grid;
+    gap:2rem;
+}
+
+/*==================================================
+CARDS
+===================================================*/
+
+.card{
+
+    background:white;
+
+    padding:2rem;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.card h2{
+
+    font-family:var(--heading-font);
+
+    color:var(--primary);
+
+    margin-bottom:1rem;
+
+    border-left:6px solid var(--primary);
+
+    padding-left:.8rem;
+
+}
+
+.card h3{
+
+    margin-top:1rem;
+
+    color:var(--primary);
+
+    font-family:var(--heading-font);
+
+}
+
+.card p{
+
+    margin:.8rem 0;
+
+}
+
+.card ul,
+.card ol{
+
+    margin-left:1.5rem;
+
+}
+
+.card li{
+
+    margin-bottom:.6rem;
+
+}
+
+/*==================================================
+COLOR SCHEME
+===================================================*/
+
+.color-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:1.5rem;
+
+    margin-top:1rem;
+
+}
+
+.color-card{
+
+    background:#fafafa;
+
+    padding:1rem;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.08);
+
+}
+
+.color{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    border:2px solid #ddd;
+
+    margin-bottom:1rem;
+
+}
+
+.forest{
+
+    background:#2E7D32;
+
+}
+
+.lightgreen{
+
+    background:#A5D6A7;
+
+}
+
+.white{
+
+    background:#FFFFFF;
+
+}
+
+.dark{
+
+    background:#333333;
+
+}
+
+.blue{
+
+    background:#4FC3F7;
+
+}
+
+/*==================================================
+TYPOGRAPHY
+===================================================*/
+
+.typography{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:2rem;
+
+}
+
+.heading-font{
+
+    font-family:var(--heading-font);
+
+    font-size:1.2rem;
+
+}
+
+.body-font{
+
+    font-family:var(--body-font);
+
+}
+
+/*==================================================
+TABLE
+===================================================*/
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:1rem;
+
+}
+
+th{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+th,
+td{
+
+    border:1px solid #ddd;
+
+    padding:1rem;
+
+    text-align:left;
+
+}
+
+tbody tr:nth-child(even){
+
+    background:#f7f7f7;
+
+}
+
+/*==================================================
+WIREFRAMES
+===================================================*/
+
+.wireframes{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:2rem;
+
+    margin-top:1.5rem;
+
+}
+
+figure{
+
+    text-align:center;
+
+}
+
+figure img{
+
+    border:3px solid var(--primary);
+
+    border-radius:10px;
+
+}
+
+figcaption{
+
+    margin-top:1rem;
+
+    font-weight:bold;
+
+    color:var(--primary);
+
+}
+
+/*==================================================
+FOOTER
+===================================================*/
+
+footer{
+
+    margin-top:2rem;
+
+    background:var(--primary);
+
+    color:white;
+
+    text-align:center;
+
+    padding:1.5rem;
+
+}
+
+/*==================================================
+LINKS
+===================================================*/
+
+a{
+
+    color:var(--accent);
+
+}
+
+a:hover{
+
+    color:var(--primary);
+
+}
+
+/*==================================================
+RESPONSIVE
+===================================================*/
+
+@media (max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+header h1{
+
+    font-size:2rem;
+
+}
+
+.card{
+
+    padding:1.5rem;
+
+}
+
+.color{
+
+    width:70px;
+
+    height:70px;
+
+}
+
+}
