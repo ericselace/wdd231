@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "National Tree Planting Day",
+        "date": "September 20, 2026",
+        "time": "8:00 AM",
+        "location": "Lomé Botanical Garden",
+        "description": "Join volunteers to plant over 1,000 native trees."
+    },
+    {
+        "id": 2,
+        "title": "Beach Cleanup Campaign",
+        "date": "October 10, 2026",
+        "time": "7:30 AM",
+        "location": "Aného Beach",
+        "description": "Help remove plastic waste and protect marine life."
+    },
+    {
+        "id": 3,
+        "title": "Environmental Awareness Workshop",
+        "date": "November 5, 2026",
+        "time": "9:00 AM",
+        "location": "University of Lomé",
+        "description": "Learn practical ways to reduce pollution and protect the environment."
+    }
+]

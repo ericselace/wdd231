@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Tree Planting Campaign",
+        "image": "images/tree-planting.webp",
+        "alt": "Volunteers planting trees",
+        "description": "Community members planting native trees to restore forests and improve air quality.",
+        "location": "Lomé, Togo"
+    },
+    {
+        "id": 2,
+        "title": "Beach Cleanup",
+        "image": "images/beach-cleanup.webp",
+        "alt": "Volunteers cleaning a beach",
+        "description": "Monthly cleanup activities to remove plastic waste from beaches and protect marine life.Organized by green safe and the church of jesus-christ of latters days saints",
+        "location": "Aného, Togo"
+    },
+    {
+        "id": 3,
+        "title": "Recycling Program",
+        "image": "images/recycling.webp",
+        "alt": "People sorting recyclable materials",
+        "description": "Educational recycling campaigns encouraging households to reduce waste.",
+        "location": "Kara, Togo"
+    },
+    {
+        "id": 3,
+        "title": "Beach Cleanup",
+        "image": "images/togo-cleanup.webp",
+        "alt": "People cleaning  Lome street",
+        "description": "activities to remove plastic waste from Lome StreetS.",
+        "location": "Lome, Togo"
+    },
+    {
+        "id": 3,
+        "title": "Beach Cleanup",
+        "image": "images/assainissement.webp",
+        "alt": "People cleaning  Lome street",
+        "description": "activities to remove plastic waste from Lome StreetS.",
+        "location": "Lome, Togo"
+    }
+]
