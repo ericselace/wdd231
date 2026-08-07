@@ -1,0 +1,462 @@
+/*=========================================================
+                    JOIN PAGE
+=========================================================*/
+
+/*=========================================================
+                    HERO
+=========================================================*/
+
+.join-hero {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+}
+
+.join-hero img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+}
+
+.join-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .48);
+
+}
+
+.join-hero-content {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 2rem;
+
+    background: transparent;
+
+}
+
+.join-hero-content h1 {
+
+    color: #ffffff;
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(2.5rem, 6vw, 4rem);
+
+    margin-bottom: 1rem;
+
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+
+}
+
+.join-hero-content p {
+
+    max-width: 700px;
+
+    color: #ffffff;
+
+    font-size: 1.15rem;
+
+    background: transparent;
+
+}
+
+
+/*=========================================================
+                INTRODUCTION
+=========================================================*/
+
+.join-introduction {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+.join-introduction p {
+
+    font-size: 1.05rem;
+
+}
+
+
+/*=========================================================
+                JOIN SECTION
+=========================================================*/
+
+.join-section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 3rem;
+
+    align-items: start;
+
+}
+
+
+/*=========================================================
+                MEMBERSHIP INFORMATION
+=========================================================*/
+
+.membership-info {
+
+    background: var(--surface);
+
+    padding: 2rem;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+.membership-info h2 {
+
+    text-align: left;
+
+}
+
+.membership-info ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin-top: 1.5rem;
+
+}
+
+.membership-info li {
+
+    padding: 1rem;
+
+    margin-bottom: .8rem;
+
+    background: var(--background);
+
+    border-left: 4px solid var(--primary);
+
+    border-radius: 6px;
+
+}
+
+
+/*=========================================================
+                FORM CONTAINER
+=========================================================*/
+
+.join-form-container {
+
+    background: var(--surface);
+
+    padding: 2rem;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+.join-form-container h2 {
+
+    text-align: left;
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+/*=========================================================
+                    FORM
+=========================================================*/
+
+#joinForm {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .6rem;
+
+}
+
+#joinForm label {
+
+    font-weight: 600;
+
+    color: var(--text);
+
+    margin-top: .6rem;
+
+}
+
+#joinForm input,
+#joinForm select,
+#joinForm textarea {
+
+    width: 100%;
+
+    padding: .9rem 1rem;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: var(--text);
+
+    font-family: var(--body-font);
+
+    font-size: 1rem;
+
+}
+
+#joinForm textarea {
+
+    resize: vertical;
+
+    min-height: 130px;
+
+}
+
+#joinForm input:focus,
+#joinForm select:focus,
+#joinForm textarea:focus {
+
+    outline: 3px solid rgba(79, 195, 247, .35);
+
+    border-color: var(--primary);
+
+}
+
+
+/*=========================================================
+                CHECKBOX
+=========================================================*/
+
+#joinForm .checkbox-label {
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: .7rem;
+
+    margin: 1rem 0;
+
+    font-weight: 400;
+
+}
+
+#joinForm .checkbox-label input {
+
+    width: auto;
+
+    accent-color: var(--primary);
+
+}
+
+
+/*=========================================================
+                SUBMIT BUTTON
+=========================================================*/
+
+#joinForm .button {
+
+    width: 100%;
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 1rem;
+
+    font-size: 1rem;
+
+}
+
+
+/*=========================================================
+                    DIALOG
+=========================================================*/
+
+#joinDialog {
+
+    width: min(550px, 90%);
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: var(--radius);
+
+    background: var(--surface);
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+
+}
+
+#joinDialog::backdrop {
+
+    background: rgba(0, 0, 0, .65);
+
+    backdrop-filter: blur(3px);
+
+}
+
+#joinDialog .dialog-content {
+
+    position: relative;
+
+    padding: 3rem 2rem;
+
+    text-align: center;
+
+    background: var(--surface);
+
+}
+
+#joinDialog h2 {
+
+    color: var(--primary-dark);
+
+}
+
+#joinDialog p {
+
+    background: transparent;
+
+}
+
+.dialog-close {
+
+    position: absolute;
+
+    top: 1rem;
+
+    right: 1rem;
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    font-size: 1.6rem;
+
+    cursor: pointer;
+
+}
+
+.dialog-close:hover {
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+}
+
+#dialogOk {
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 1rem;
+
+}
+
+
+/*=========================================================
+                RESPONSIVE
+=========================================================*/
+
+@media screen and (min-width: 768px) {
+
+    .join-section {
+
+        grid-template-columns: 1fr 1.3fr;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .join-hero,
+    .join-hero img {
+
+        min-height: 400px;
+
+        height: 400px;
+
+    }
+
+    .join-hero-content h1 {
+
+        font-size: 2.3rem;
+
+    }
+
+    .join-section {
+
+        padding: 2rem 1rem;
+
+    }
+
+    .membership-info,
+    .join-form-container {
+
+        padding: 1.5rem;
+
+    }
+
+}
