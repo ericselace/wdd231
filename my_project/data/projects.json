@@ -2,41 +2,91 @@
     {
         "id": 1,
         "title": "Tree Planting Campaign",
+        "category": "Tree Planting",
+        "date": "2026-05-14",
+        "status": "Completed",
+        "location": "Lomé, Togo",
         "image": "images/tree-planting.webp",
         "alt": "Volunteers planting trees",
-        "description": "Community members planting native trees to restore forests and improve air quality.",
-        "location": "Lomé, Togo"
+        "description": "Community volunteers planted over 500 native trees to restore local forests."
     },
     {
         "id": 2,
-        "title": "Beach Cleanup",
+        "title": "Beach Cleanup Campaign",
+        "category": "Cleanup",
+        "date": "2026-06-10",
+        "status": "Completed",
+        "location": "Aného, Togo",
         "image": "images/beach-cleanup.webp",
-        "alt": "Volunteers cleaning a beach",
-        "description": "Monthly cleanup activities to remove plastic waste from beaches and protect marine life.Organized by green safe and the church of jesus-christ of latters days saints",
-        "location": "Aného, Togo"
+        "alt": "Volunteers cleaning the beach",
+        "description": "Removing plastic waste to protect marine life and coastal ecosystems."
     },
     {
         "id": 3,
-        "title": "Recycling Program",
+        "title": "Recycling Education Program",
+        "category": "Recycling",
+        "date": "2026-07-18",
+        "status": "Completed",
+        "location": "Kara, Togo",
         "image": "images/recycling.webp",
-        "alt": "People sorting recyclable materials",
-        "description": "Educational recycling campaigns encouraging households to reduce waste.",
-        "location": "Kara, Togo"
+        "alt": "People learning recycling",
+        "description": "Educational workshops teaching families how to recycle household waste."
     },
     {
-        "id": 3,
+        "id": 4,
+        "title": "River Protection Initiative",
+        "category": "Water",
+        "date": "2026-08-15",
+        "status": "Upcoming",
+        "location": "Kpalimé, Togo",
+        "image": "images/river.webp",
+        "alt": "River conservation project",
+        "description": "Community action to protect rivers and improve water quality."
+    },
+    {
+        "id": 5,
+        "title": "School Environmental Awareness",
+        "category": "Education",
+        "date": "2026-09-05",
+        "status": "Upcoming",
+        "location": "Atakpamé, Togo",
+        "image": "images/school.webp",
+        "alt": "Students learning about the environment",
+        "description": "Interactive workshops helping students develop sustainable habits."
+    },
+    {
+        "id": 6,
+        "title": "Community Tree Nursery",
+        "category": "Tree Planting",
+        "date": "2026-09-25",
+        "status": "Upcoming",
+        "location": "Sokodé, Togo",
+        "image": "images/nursery.webp",
+        "alt": "Young tree nursery",
+        "description": "Growing native trees for future reforestation campaigns."
+    },
+    {
+        "id": 7,
         "title": "Beach Cleanup",
+        "category":"Cleanup",
+        "date": "2026-10-10",
+        "status":"Upcoming",
+        "location": "Lome, Togo",
         "image": "images/togo-cleanup.webp",
         "alt": "People cleaning  Lome street",
-        "description": "activities to remove plastic waste from Lome StreetS.",
-        "location": "Lome, Togo"
+        "description": "activities to remove plastic waste from Lome StreetS."
+        
     },
     {
-        "id": 3,
+        "id": 8,
         "title": "Beach Cleanup",
+        "category":"Cleanup",
+        "date":"2026-09-31",
+        "status":"Upcoming",
+        "location": "Lome, Togo",
         "image": "images/assainissement.webp",
         "alt": "People cleaning  Lome street",
-        "description": "activities to remove plastic waste from Lome StreetS.",
-        "location": "Lome, Togo"
+        "description": "activities to remove plastic waste from Lome StreetS."
+        
     }
 ]
