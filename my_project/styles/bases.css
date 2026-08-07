@@ -927,3 +927,70 @@ WEATHER
     height:100px;
 
 }
+/*=========================================================
+PROJECT CARD DETAILS
+=========================================================*/
+
+.project-content{
+
+    padding:1.5rem;
+
+}
+
+.project-details{
+
+    margin:1rem 0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.5rem;
+
+}
+
+.project-details li{
+
+    color:var(--text-light);
+
+}
+
+/*=========================================================
+PROJECT STATUS
+=========================================================*/
+
+.project-status{
+
+    display:inline-block;
+
+    padding:.4rem .9rem;
+
+    border-radius:30px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    margin-bottom:1rem;
+
+    color:white;
+
+}
+
+.completed{
+
+    background:#02700a;
+
+}
+
+.upcoming{
+
+    background:#F9A825;
+
+}
+
+.ongoing{
+
+    background:#0288D1;
+
+}

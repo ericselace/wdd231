@@ -68,19 +68,30 @@ function displayProjects(projects) {
 
             <div class="project-content">
 
+                <span class="project-status ${project.status.toLowerCase()}">
+                    ${project.status}
+                </span>
+
                 <h3>${project.title}</h3>
 
                 <p>${project.description}</p>
 
-                <p><strong>Category:</strong> ${project.category}</p>
+                <ul class="project-details">
 
-                <p><strong>Location:</strong> ${project.location}</p>
+                    <li><strong>Category:</strong> ${project.category}</li>
 
-                <p><strong>Date:</strong> ${project.date}</p>
+                    <li><strong>Location:</strong> ${project.location}</li>
 
-                <p><strong>Status:</strong> ${project.status}</p>
+                    <li><strong>Date:</strong> ${project.date}</li>
+
+                </ul>
+
+                <a href="contact.html" class="button">
+                    Learn More
+                </a>
 
             </div>
+
 
         `;
 
