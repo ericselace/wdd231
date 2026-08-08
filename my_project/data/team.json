@@ -4,20 +4,20 @@
         "name": "Eric Adagla",
         "position": "Executive Director",
         "image": "images/team-eric.webp",
-        "bio": "Sarah leads Green Safe's environmental initiatives and community partnerships."
+        "bio": "Eric leads Green Safe's environmental initiatives and community partnerships."
     },
     {
         "id": 2,
         "name": "kokou Gagnon",
         "position": "Project Coordinator",
         "image": "images/team-kokou.webp",
-        "bio": "Michael organizes tree planting campaigns and recycling projects."
+        "bio": "kokou organizes tree planting campaigns and recycling projects."
     },
     {
         "id": 3,
         "name": "Mawugnon Esther",
         "position": "Volunteer Coordinator",
         "image": "images/team-mawugnon.webp",
-        "bio": "Linda recruits and trains volunteers for environmental activities."
+        "bio": "Mawugnon recruits and trains volunteers for environmental activities."
     }
 ]
