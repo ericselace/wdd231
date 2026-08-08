@@ -1,0 +1,248 @@
+/*=========================================================
+LARGE SCREENS (768px and up)
+=========================================================*/
+ 
+@media screen and (min-width:768px){
+
+ /*=========================================================
+HEADER
+=========================================================*/
+     #menuButton{
+
+    display:none;
+
+    } 
+    .navigation{
+
+    display:flex;
+
+    position:right;
+
+    flex-direction:row;
+
+    background:none;
+
+    width:auto;
+
+    box-shadow:none;
+
+    } 
+    .navigation li{
+
+    border:none;
+
+    }
+
+    .navigation a{
+
+        padding:.75rem 1rem;
+
+        border-radius:30px;
+
+    }
+
+    .navigation a:hover{
+
+        background:var(--primary);
+
+    }
+    .header-container{
+
+        padding:1rem 3rem;
+
+    }
+
+/* HERO */
+    .hero img{
+
+    height:700px;
+
+    }
+
+   .hero-content{
+
+        padding:3rem;
+
+    }
+    .hero-content h1{
+
+        max-width:900px;
+
+    }
+
+    .hero-content p{
+
+        font-size:1.2rem;
+
+    }
+/*=========================================================
+                 MISSION
+=========================================================*/
+    .mission{
+
+        padding:5rem 2rem;
+
+    }
+
+/*=========================================================
+STATISTICS
+=========================================================*/
+    .stats-container{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+/*=========================================================
+PROJECTS
+=========================================================*/
+
+    #projectCards{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+/*=========================================================
+            EVENTS
+=========================================================*/
+
+    #eventCards{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+/*=========================================================
+                      CTA
+=========================================================*/
+
+    .cta{
+
+        margin:5rem auto;
+
+        max-width:1100px;
+
+    }
+
+/*=========================================================
+FOOTER
+=========================================================*/
+
+    .footer-container{
+
+        grid-template-columns:2fr 1fr 1fr 1fr;
+
+    }
+
+    .newsletter{
+
+        flex-wrap:nowrap;
+
+    }
+
+    .newsletter form{
+
+        flex-wrap:nowrap;
+
+    }
+
+
+    /*=========================================================
+          TEAM
+    =========================================================*/
+
+    #teamCards{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+@media (max-width:767px){
+
+    .weather-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .weather-info{
+
+        text-align:center;
+
+    }
+
+}
+/*=========================================================
+                DESKTOP NAVIGATION
+=========================================================*/
+
+@media screen and (min-width: 768px) {
+
+    header {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+    #menuButton {
+
+        display: none;
+
+    }
+
+    .navigation {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: flex-end;
+
+        gap: .5rem;
+
+        position: static;
+
+        width: auto;
+
+        background: transparent;
+
+        box-shadow: none;
+
+    }
+
+    .navigation.open {
+
+        display: flex;
+
+        flex-direction: row;
+
+        position: static;
+
+        width: auto;
+
+        background: transparent;
+
+        box-shadow: none;
+
+    }
+
+    .navigation a {
+
+        display: block;
+
+        padding: .6rem .8rem;
+
+        white-space: nowrap;
+
+    }
+
+}

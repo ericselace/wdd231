@@ -28,3 +28,723 @@
     
 </body>
 </html>
+/*=========================================================
+                    GREEN SAFE
+                    BASE CSS
+=========================================================*/
+
+
+/*=========================================================
+                    COLOR & TYPOGRAPHY
+=========================================================*/
+
+:root {
+
+    /* Colors */
+
+    --primary: #2E7D32;
+
+    --primary-dark: #1B5E20;
+
+    --secondary: #A5D6A7;
+
+    --accent: #4FC3F7;
+
+    --background: #F8F9FA;
+
+    --surface: #FFFFFF;
+
+    --text: #333333;
+
+    --text-light: #666666;
+
+
+    /* Typography */
+
+    --heading-font: "Poppins", sans-serif;
+
+    --body-font: "Open Sans", sans-serif;
+
+
+    /* Layout */
+
+    --max-width: 1200px;
+
+    --radius: 12px;
+
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+    --transition: .3s ease;
+
+}
+
+
+/*=========================================================
+                    RESET
+=========================================================*/
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family: var(--body-font);
+
+    background: var(--background);
+
+    color: var(--text);
+
+    line-height: 1.7;
+
+}
+
+
+img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+button,
+input,
+select,
+textarea {
+
+    font: inherit;
+
+}
+
+
+/*=========================================================
+                    MAIN
+=========================================================*/
+
+main {
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+}
+
+
+/*=========================================================
+                    TYPOGRAPHY
+=========================================================*/
+
+h1,
+h2,
+h3 {
+
+    font-family: var(--heading-font);
+
+    color: var(--primary-dark);
+
+    margin-bottom: 1rem;
+
+}
+
+
+h1 {
+
+    font-size: clamp(2rem, 5vw, 3.5rem);
+
+}
+
+
+h2 {
+
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+
+    text-align: center;
+
+}
+
+
+h3 {
+
+    font-size: 1.3rem;
+
+}
+
+
+p {
+
+    margin-bottom: 1rem;
+
+    color: var(--text-light);
+
+}
+
+
+/*=========================================================
+                    HEADER
+=========================================================*/
+
+header {
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 2rem;
+
+    padding: 1rem 5%;
+
+}
+
+
+/*=========================================================
+                    LOGO
+=========================================================*/
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .8rem;
+
+    font-family: var(--heading-font);
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: var(--primary);
+
+    flex-shrink: 0;
+
+}
+
+
+.logo img {
+
+    width: 60px;
+
+    height: 60px;
+
+    object-fit: contain;
+
+}
+
+
+.logo span {
+
+    background: transparent;
+
+}
+
+
+/*=========================================================
+                    MENU BUTTON
+=========================================================*/
+
+#menuButton {
+
+    display: block;
+
+    background: transparent;
+
+    border: none;
+
+    color: var(--primary-dark);
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    padding: .3rem;
+
+    line-height: 1;
+
+}
+
+
+/*=========================================================
+                NAVIGATION - MOBILE
+=========================================================*/
+
+.navigation {
+
+    display: none;
+
+}
+
+
+.navigation.open {
+
+    display: flex;
+
+    flex-direction: column;
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    width: 100%;
+
+    background: var(--surface);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.navigation a {
+
+    display: block;
+
+    padding: 1rem 5%;
+
+    color: var(--text);
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+
+.navigation a:hover {
+
+    color: var(--primary);
+
+    background: var(--background);
+
+}
+
+
+.navigation a.active {
+
+    color: var(--primary);
+
+    font-weight: 700;
+
+}
+
+
+/*=========================================================
+                    HERO
+=========================================================*/
+
+.hero {
+
+    position: relative;
+
+    margin-bottom: 3rem;
+
+}
+
+
+.hero img {
+
+    min-height: 500px;
+
+    object-fit: cover;
+
+}
+
+
+.hero-content {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, .45);
+
+    color: #ffffff;
+
+    padding: 2rem;
+
+}
+
+
+.hero-content h1 {
+
+    color: #ffffff;
+
+}
+
+
+.hero-content p {
+
+    color: #ffffff;
+
+    max-width: 700px;
+
+    background: transparent;
+
+}
+
+
+/*=========================================================
+                    BUTTONS
+=========================================================*/
+
+.button {
+
+    display: inline-block;
+
+    margin-top: 1rem;
+
+    padding: .9rem 2rem;
+
+    background: var(--primary);
+
+    color: #ffffff !important;
+
+    border: none;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+
+}
+
+
+.button:hover {
+
+    background: var(--primary-dark);
+
+    color: #ffffff !important;
+
+    transform: translateY(-3px);
+
+}
+
+
+/*=========================================================
+                    SECTIONS
+=========================================================*/
+
+section {
+
+    padding: 4rem 1rem;
+
+}
+
+
+/*=========================================================
+                    MISSION
+=========================================================*/
+
+.mission {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+/*=========================================================
+                    STATISTICS
+=========================================================*/
+
+.stats-container {
+
+    display: grid;
+
+    gap: 1.5rem;
+
+}
+
+
+.stats-container article {
+
+    background: var(--surface);
+
+    padding: 2rem;
+
+    text-align: center;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+
+}
+
+
+.stats-container article:hover {
+
+    transform: translateY(-6px);
+
+}
+
+
+.stats-container h3 {
+
+    font-size: 2rem;
+
+    color: var(--primary);
+
+}
+
+
+/*=========================================================
+                    PROJECTS
+=========================================================*/
+
+#projectCards {
+
+    display: grid;
+
+    gap: 2rem;
+
+}
+
+
+/*=========================================================
+                    EVENTS
+=========================================================*/
+
+#eventCards {
+
+    display: grid;
+
+    gap: 2rem;
+
+}
+
+
+/*=========================================================
+                    TIPS
+=========================================================*/
+
+blockquote {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-style: italic;
+
+    font-size: 1.2rem;
+
+    border-left: 6px solid var(--primary);
+
+    padding-left: 1rem;
+
+}
+
+
+/*=========================================================
+                    CTA
+=========================================================*/
+
+.cta {
+
+    text-align: center;
+
+    background: var(--secondary);
+
+    border-radius: var(--radius);
+
+    margin: 3rem 1rem;
+
+}
+
+
+/*=========================================================
+                DESKTOP NAVIGATION
+=========================================================*/
+
+@media screen and (min-width: 768px) {
+
+
+    /* HEADER */
+
+    header {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        padding: 1rem 5%;
+
+    }
+
+
+    /* HIDE MOBILE BUTTON */
+
+    #menuButton {
+
+        display: none;
+
+    }
+
+
+    /* NAVIGATION */
+
+    .navigation {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: flex-end;
+
+        gap: .5rem;
+
+        position: static;
+
+        width: auto;
+
+        background: transparent;
+
+        box-shadow: none;
+
+    }
+
+
+    .navigation.open {
+
+        display: flex;
+
+        flex-direction: row;
+
+        position: static;
+
+        width: auto;
+
+        background: transparent;
+
+        box-shadow: none;
+
+    }
+
+
+    .navigation a {
+
+        display: block;
+
+        padding: .6rem .8rem;
+
+        white-space: nowrap;
+
+    }
+
+
+    .navigation a:hover {
+
+        background: transparent;
+
+    }
+
+
+    /* STATISTICS */
+
+    .stats-container {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+    /* PROJECTS */
+
+    #projectCards {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+    /* EVENTS */
+
+    #eventCards {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+
+/*=========================================================
+                LARGE DESKTOP
+=========================================================*/
+
+@media screen and (min-width: 1200px) {
+
+    header {
+
+        padding-left: 3rem;
+
+        padding-right: 3rem;
+
+    }
+
+}
